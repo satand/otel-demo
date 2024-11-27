@@ -25,8 +25,8 @@ spec:
         imagePullPolicy: Always
         name: otelcol-demo-app
         env:
-        - name: SERVICE_NAME
-          value: "http://otelcol-demo-app:8080"
+        # - name: SERVICE_NAME
+        #   value: "http://otelcol-demo-app:8080"
         - name: OTELCOL_SERVER
           value: "http://tempo-instance-distributor.tempo1.svc.cluster.local:4317"
 ---
